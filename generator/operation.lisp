@@ -55,7 +55,7 @@
              (parse-response
               (aws-request :service ,service
                            :method ,(intern (gethash "method" (gethash "http" options)) :keyword)
-                           :params (cons "Action" ,name))
+                           :params `(("Action" . ,,name) ("Version" . ,,version)))
               ,(and output
                     (gethash "shape" output))
               ,(and output
