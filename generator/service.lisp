@@ -66,6 +66,7 @@
          (api-2.json
            (merge-pathnames #P"api-2.json"
                             (car (last (uiop:subdirectories service-dir))))))
+    (ensure-directories-exist output-dir)
     (assert (probe-file api-2.json))
     (dump-service service api-2.json output)
     output))
