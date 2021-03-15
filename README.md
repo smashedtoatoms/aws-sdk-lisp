@@ -4,11 +4,12 @@
 
 This is a fork of [aws-sdk-lisp](https://github.com/pokepay/aws-sdk-lisp).  I
 have pulled in the latest aws-sdk specs as of 3.12.2021 and made some other
-updates. I've changed the build process a bit and I don't want to force those
-changes on anyone, so I am going to rename this fork and see where it goes.
+updates. I've also changed the build process a bit.  I don't want to force those
+changes on others, so I am going to rename this fork and see what direction it
+goes.
 
-I am likely going to make more changes, so consider this Alpha.  See issues
-for known issues on which I am currently working.
+Please see the issues list if you're wondering where the focus is right now.
+I am likely going to make more changes, so consider this Alpha.
 
 ## Usage
 

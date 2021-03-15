@@ -57,7 +57,7 @@
      (defstruct (,(lispify* name) (:copier nil))
        ,@(loop for key being each hash-key of members
                  using (hash-value value)
-               collect `(,(lispify key)
+               collect `(,(lispify (format nil "~aType" key))
                          ,(if (find key required :test #'string=)
                               `(error ,(format nil ":~A is required" (lispify* key)))
                               nil)

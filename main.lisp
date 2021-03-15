@@ -1,6 +1,5 @@
 (uiop:define-package #:aws-sdk-cl
   (:nicknames #:aws-sdk-cl/main #:aws)
-  (:use #:cl)
   (:use-reexport #:aws-sdk-cl/session
                  #:aws-sdk-cl/make-session
                  #:aws-sdk-cl/credentials

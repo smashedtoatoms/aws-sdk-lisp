@@ -48,6 +48,10 @@
                           (let ((*session* (%make-session :credentials
                                                           (slot-value provider 'shared-credentials)
                                                           :region (session-region *session*))))
+                            ;; This can't run if you haven't generated services
+                            ;; and you can't generate services without it.
+                            ;; This might need its own call in credentials
+                            ;; instead of using the service.
                             (aws/sts:assume-role :role-arn role-arn
                                                  :role-session-name role-session-name
                                                  :duration-seconds duration-seconds
