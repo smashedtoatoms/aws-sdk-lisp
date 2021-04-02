@@ -2,11 +2,19 @@
 
 ## Warning
 
-This is a fork of [aws-sdk-lisp](https://github.com/pokepay/aws-sdk-lisp).  I
-have pulled in the latest aws-sdk specs as of 3.12.2021 and made some other
-updates. I've also changed the build process a bit.  I don't want to force those
-changes on others, so I am going to rename this fork and see what direction it
-goes.
+aws-sdk-cl is a fork of [aws-sdk-lisp](https://github.com/pokepay/aws-sdk-lisp).
+I have pulled in the latest aws-sdk specs as of 4.2.2021 and made some other
+updates. I've also changed the build process a bit (I am using clpm instead of
+Roswell).  I don't want to force those changes on others, so I am going to
+rename this fork and see what direction it goes.
+
+This is not my full-time job, and so far I only get to use this for fun. If you
+NEED it to do something soon, you will need to roll your sleeves up and get into
+it.  Also, until I have the issues for it closed out it is not sufficiently
+different from the original repo to justify putting in Quicklisp.  Until that
+happens, I will make no effort to do so.  If you want to use this, you'll need
+to manually pull it in, or if you're using [clpm](https://clpm.dev) you can pull
+it in via your clpmfile.
 
 Please see the issues list if you're wondering where the focus is right now.
 I am likely going to make more changes, so consider this Alpha.
